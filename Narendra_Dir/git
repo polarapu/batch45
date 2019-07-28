@@ -1,0 +1,24 @@
+git init
+git add .
+git status
+giy commite -m "----"
+git config --global user.name "name"
+git config --global user.email "mail"
+git show 
+git reset HEAD file name
+git reset --soft cid
+git reset --hard cid
+git reset HEAD~1
+git log 
+git log -number
+git log --oneline 
+git log --author=name
+git log --untill=yy-mm-dd
+git log --after=yy-mm-dd --before=yy-mm-dd
+git log -- file.txt
+git pull
+git push
+git clone url
+git config --list
+
+
