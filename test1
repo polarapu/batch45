@@ -1,0 +1,190 @@
+git init
+git config --global user.name "Polarapu Prasad"
+git config --global user.email "polarapuprasad@gmail.com"
+git config --list
+
+
+touch file1
+ls
+git status
+git add file1
+git status
+git commit -m "first commit" file
+git status
+git log
+git show cid
+
+
+touch file2 file3 file4
+ls
+git add file2 file4 
+or
+git add .
+or
+git add *
+or
+git add -A
+
+
+git reset HEAD file7  (staging to workspace)
+git reset --soft cid  (local to staging)
+git reset --hard cid
+
+git reset HEAD~1
+or
+git reset --mixed cid
+
+
+
+
+git clone path/of/central-repo
+git clone https://github.com/polarapu/batch45.git
+ls
+cd batch45
+touch prasad
+git add prasad
+git commit -m "Test commit"
+git push
+
+========================
+git clone https://github.com/polarapu/batch45.git
+ls
+cd batch45
+ls
+touch prasad
+git status
+git add .
+git commit -m "Sample file by prasad" 
+git push
+
+git pull
+esc :wq!
+git push
+
+=====================
+touch , cat, vi
+
+touch
+--------
+touch prasad
+touch file1 file2
+
+cat 
+-----
+cat > file1
+.....
+.....
+......
+ctrl+d
+
+ls
+
+cat file1
+
+cat >> file1
+...
+...
+ctrl+d
+
+cat file1
+
+vi
+---
+vi file2
+
+esc i
+Hello all
+good morning
+esc :w!
+esc :q!
+or
+esc :wq!
+
+mkdir prasad-dir
+cd prasad-dir
+touch f1 f2 f3
+cd ..
+git add .
+git commit -m "Sample commit with dir"
+git push
+==================================
+git pull 
+
+git log
+git log -4
+git log --oneline
+git log --oneline -3
+git log --author=prasad 
+git log --author=prasad --oneline
+git log --author=prasad  --oneline -3
+git log --until=yy-mm-dd
+or
+git log --befor=yy-mm-dd
+
+git log --since=yy-mm-dd
+or
+git log --after=yy-mm-dd
+
+git log --after=2019-07-20  --befor=2019-07-26
+or
+git log --since=2019-07-20 --until=2019-07-27
+
+git log --after="2019-07-26 20:00"
+git log --after="2019-07-26 12:00" --before="2019-07-26 15:00"
+
+git log -- file.txt
+
+
+
+git status
+git s
+git l
+git l1
+
+
+git status
+git s
+
+git config --global alias.s "status"
+
+git config --list
+
+git log --oneline 
+
+git l1
+
+git config --global alias.l1 "log --oneline"
+
+git config --list
+
+git config --global alias.cl "config --list"
+
+
+git config --global --unset alias.l1
+
+git config --global --unset user.name
+
+Git Branches
+===========
+touch file1 file2
+add, commit
+git branch
+git branch branch-name
+git branch master1
+git branch
+git checkout master1
+git branch
+touch file3
+git add, commit
+git log
+git checkout master
+ls
+git log
+git merge master1
+git cherry-pick cid
+
+git branch -d master1
+
+git push path/of/c-repo release1
+or
+git push origin release1
