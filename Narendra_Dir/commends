@@ -1,0 +1,29 @@
+DevOps Training (to All - Entire Audience):
+8:06 AM: Git Branches
+===========
+touch file1 file2
+add, commit
+git branch
+git branch branch-name
+git branch master1
+git branch
+git checkout master1
+git branch
+touch file3
+git add, commit
+git log
+git checkout master
+ls
+git log
+git merge master1
+git cherry-pick cid
+
+git branch -d master1
+
+git push path/of/c-repo release1
+or
+git push origin release1
+
+git push origin -d release1
+
+
